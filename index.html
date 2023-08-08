@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome CSS Responsive Navigation menus </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo">
+      <h1>Weather App</h1>
+    </div>
+    <div class="search-box">
+
+      <input type="text" name="search" id="srch" placeholder="Search">
+      <button id="searchBtn"><i class="fa fa-search"></i></button>
+
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+
+      </li>
+    </ul>
+    <div class="menu">
+      <label for="chk1">
+        <i class="fa fa-bars"></i>
+      </label>
+    </div>
+  </header>
+
+  <!-- <br>
+    <br>
+    <br>
+    <br> -->
+
+  <div class="container">
+    <div class="weather-side">
+      <div class="weather-gradient"></div>
+      <div class="date-container">
+        <h2 class="date-dayname" , id="day1">Tuesday</h2>
+        <br>
+        <span class="date-day" , id="date1">15 Jan 2019</span><i class="location-icon" data-feather="map-pin"></i>
+        <br><span
+          class="location" , id="cityName">Paris, FR</span>
+      </div>
+      <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+        <h1 class="weather-temp" id="temp">0°C</h1>
+      </div>
+    </div>
+    <div class="info-side">
+      <div class="today-info-container">
+        <div class="today-info">
+          <div class="precipitation"> <span class="title">FEELS LIKE</span><span class="value" id="feels_like">0</span>
+            <div class="clear"></div>
+          </div>
+          <div class="humidity"> <span class="title">HUMIDITY</span>
+            <span class="value" id="humidity">0</span>
+            <div class="clear"></div>
+          </div>
+          <div class="wind"> <span class="title">WIND</span><span class="value" id="wind_speed">0 km/h</span>
+            <div class="clear"></div>
+          </div>
+
+          <div class="maxTemp"> <span class="title">Max Temp</span><span class="value" id="max_temp">0 km/h</span>
+            <div class="clear"></div>
+          </div>
+
+          <div class="minTemp"> <span class="title">Min Temp</span><span class="value" id="min_temp">0 km/h</span>
+            <div class="clear"></div>
+          </div>
+
+          <div class="cloudPct"> <span class="title">Cloud Pct</span><span class="value" id="cloud_pct">0</span>
+            <div class="clear"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
